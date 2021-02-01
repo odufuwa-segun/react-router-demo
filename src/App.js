@@ -8,6 +8,7 @@ const Navigation = () => (
       <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
       <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
       <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/blog'>Blog</NavLink></li>
     </ul>
   </nav>
 );
@@ -27,6 +28,14 @@ const About = () => (
   </div>
 );
 
+const Blog = () => (
+  <div className='blog'>
+    <h1>Blog</h1>
+    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
+    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
+  </div>
+);
+
 const Contact = () => (
   <div className='contact'>
     <h1>Contact Me</h1>
@@ -38,6 +47,7 @@ const Main = () => (
   <Switch>
     <Route exact path='/' component={Home}></Route>
     <Route exact path='/about' component={About}></Route>
+    <Route exact path='/blog' component={Blog}></Route>
     <Route exact path='/contact' component={Contact}></Route>
   </Switch>
 );
