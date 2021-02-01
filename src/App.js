@@ -9,6 +9,7 @@ const Navigation = () => (
       <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
       <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
       <li><NavLink exact activeClassName="current" to='/blog'>Blog</NavLink></li>
+      <li><NavLink exact activeClassName="current" to='/exit'>Exit</NavLink></li>
     </ul>
   </nav>
 );
@@ -23,6 +24,14 @@ const Home = () => (
 const About = () => (
   <div className='about'>
     <h1>About Me</h1>
+    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
+    <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
+  </div>
+);
+
+const Exit = () => (
+  <div className='about'>
+    <h1>Exit</h1>
     <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
     <p>Ipsum dolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias?</p>
   </div>
@@ -49,6 +58,7 @@ const Main = () => (
     <Route exact path='/about' component={About}></Route>
     <Route exact path='/blog' component={Blog}></Route>
     <Route exact path='/contact' component={Contact}></Route>
+    <Route exact path='/exit' component={Exit}></Route>
   </Switch>
 );
 
